@@ -18,8 +18,7 @@ chance you could succeed? You miss 100% of the shots you don't take after all. (
 
 This approach is generally useful in life and even in most user facing applications,
 but it's maladaptive when applied to distributed systems. It's critical to distinguish
-between times when failure is acceptable from it isn't. While that seems obvious, it's
-not always clear when it isn't.
+between times when failure is acceptable from it isn't.
 
 ## Hypotheticals
 
@@ -27,7 +26,7 @@ With user facing information, it's typically acceptable to present stale or part
 data. Ideally it has a disclaimer, but either way the person can evaluate whether or
 not what they've been given is usable. How often have you opened an old tab on
 your phone where the content is present, but the tab tries to refresh and fails destroying
-the content that was just there? Clearly it's better to reserve the stale cache here.
+the content that was just there? Clearly it's better to re-serve the stale cache here.
 
 The rest of the engineering world often snubs the concept of "software engineering" and
 they've got a point. We're not restricted by the physical world, so we rightfully do a 
