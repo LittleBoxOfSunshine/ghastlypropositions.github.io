@@ -135,6 +135,11 @@ that we gave them *no VM* by failing on provision that provisioning a corrupted 
 
 Best effort is not a feature. It is poison for distributed systems. It violates invariants, which introduces failures that are extremely expensive to debug. Our goal should be to root it out at every level and remain deterministic. In the examples we reviewed the producer and the consumer had opportunities to address the issue. Here are the strategies each side should have been applying.
 
+### In general
+
+Be suspicious when someone says it's best effort. Be particularly suspicious when it's brought up in the context of explaining behavior during an incident.
+In the beginning we considered why you might naively do it on purpose, but in practice it's often unintentional. People will post-hoc try to rationalize what's clearly a race condition they failed to consider properly at time of writing.
+
 ### As the producer
 
 1. Set expectations up front
