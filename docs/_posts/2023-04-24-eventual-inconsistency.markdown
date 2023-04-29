@@ -100,7 +100,16 @@ To add further confusion, there were multiple layers in the system acting as pas
 data also claimed to have generated the config correctly. So what happened? Eventually we determined that in one of the subsystems, each of the NICs are
 programmed asynchronously and in parallel. As the NICs are provisioned, they arrive at another service that aggregates them and informs a passthrough tier.
 
-![Bug Diagram](/assets/images/eventual-inconsistency/diagram1.PNG)
+<!-- TODO: local file import isn't working -->
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.1.0/+esm'
+</script>
+
+{% mermaid %}
+graph RL
+A[NIC Programmer] -->|1. NIC 1| B[NIC Aggregator] -->|NIC 1| C[Passthrough via HTTP]
+A -->|"2. NIC 2 (delayed)"| B
+{% endmermaid %}
 
 This mechanism was best effort. The data originator didn't inform the aggregation tier what the expected final state would be, so it had no way of knowing
 when it was done receiving data. The pass through layer trusted the other layers to always accurately report data. If it got no data, it would 503. On occasion, provisioning one of the NICs was delayed. Since the VM was sending the request before all NICs had finished provisioning, the pass through tier got partial data which it faithfully returned.
@@ -109,9 +118,14 @@ The order in which these would finish was nondeterministic, and the results were
 source of issues in other incidents. Customers suddenly reported that their NICs were being ordered incorrectly in large numbers. Because the leftmost node
 had made recent cache changes, it was presumed by the other layers that was the issue. With much effort, it was demonstrated that what actually happened was the NIC provisioning times had been optimized. Previously they were slow enough that they would end up in the right order. Now that they were faster, the race condition that was always present was rearing its head.
 
-The solution was to inform the aggregation tier up front how many NICs to expect notifications for, and to index the notifications to guarantee ordering.
+The solution was to inform the aggregation tier up front how many NICs to expect notifications for, and to index the notifications to guarantee ordering. If the request comes to early, the aggregator returns an error.
 
-![Diagram with fix](/assets/images/eventual-inconsistency/diagram2.PNG)
+{% mermaid %}
+graph RL
+A[NIC Programmer] -->|1. 2 NICs Incoming| B[NIC Aggregator] -->|NIC 1+2| C[Passthrough via HTTP]
+A -->|"2. NIC 1"| B
+A -->|"3. NIC 2"| B
+{% endmermaid %}
 
 ## Application
 
