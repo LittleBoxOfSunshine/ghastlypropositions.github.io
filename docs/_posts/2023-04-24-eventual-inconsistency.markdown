@@ -104,11 +104,11 @@ programmed asynchronously and in parallel. As the NICs are provisioned, they arr
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.1.0/+esm'
 </script>
 
-{% mermaid %}
+<pre class="mermaid">
 graph RL
 A[NIC Programmer] -->|1. NIC 1| B[NIC Aggregator] -->|NIC 1| C[Passthrough via HTTP]
 A -->|"2. NIC 2 (delayed)"| B
-{% endmermaid %}
+</pre>
 
 This mechanism was best effort. The data originator didn't inform the aggregation tier what the expected final state would be, so it had no way of knowing
 when it was done receiving data. The pass through layer trusted the other layers to always accurately report data. If it got no data, it would 503. On occasion, provisioning one of the NICs was delayed. Since the VM was sending the request before all NICs had finished provisioning, the pass through tier got partial data which it faithfully returned.
@@ -119,12 +119,12 @@ had made recent cache changes, it was presumed by the other layers that was the 
 
 The solution was to inform the aggregation tier up front how many NICs to expect notifications for, and to index the notifications to guarantee ordering. If the request comes to early, the aggregator returns an error.
 
-{% mermaid %}
+<pre class="mermaid">
 graph RL
 A[NIC Programmer] -->|1. 2 NICs Incoming| B[NIC Aggregator] -->|NIC 1+2| C[Passthrough via HTTP]
 A -->|"2. NIC 1"| B
 A -->|"3. NIC 2"| B
-{% endmermaid %}
+</pre>
 
 ## Application
 
