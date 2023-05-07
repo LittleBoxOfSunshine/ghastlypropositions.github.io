@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Eventual Inconsistency: How \"best effort\" ruins everything"
-date:   2023-04-24 25:00:45 -0800
+date:   2023-05-03 25:00:45 -0800
 categories: software
 ---
 
