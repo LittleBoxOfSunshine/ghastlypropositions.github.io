@@ -50,8 +50,7 @@ will be undefined. There is no escaping this, as it's fundamental even down to t
 processor[^2].
 
 Failure can be a part of our expectations though. Indeed in cloud architecture patterns you write code that *expects* failure and handles
-it gracefully. This raises the question, what's the difference between best effort and fault tolerance? A fault tolerant system can be a
-system can be *redundant*, or *terminating*.
+it gracefully. This raises the question, what's the difference between best effort and fault tolerance? A fault tolerant system can be *redundant*, or *terminating*.
 
 A **redundant system** is designed such that if a single sub-component fails, another is in place to fulfill its responsibilities. 
 We see this in systems where many servers are behind a load balancer. Whereas a **terminating system** has the ability to detect a failure and place
