@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Eventual Inconsistency: How \"best effort\" ruins everything"
-date:   2023-05-03 25:00:45 -0800
+title:  "Eventual Inconsistency: How \"best effort\" destroys distributed systems"
+date:   2023-05-10 12:00:45 -0800
 categories: software
 ---
 
@@ -11,8 +11,8 @@ That was the innocuous title of one of the most bizarre service incidents I've e
 on. It took nearly a dozen teams to track down the root cause and while the issue wasn't
 novel, the ludicrous way in which is presented itself inspired this discussion.
 
-Functions, algorithms, or APIs are often described as "best effort". In the face of a
-problem or uncertainty, the implementation will make a guess at what it should do. At 
+Code is often described as "best effort". In the face of a
+problem or uncertainty, the code will make a guess at what it should do. At 
 face value this seems fair enough. Why condemn your user to failure when there's a 
 chance you could succeed? You miss 100% of the shots you don't take after all. ( ͡° ͜ʖ ͡°)
 
@@ -26,7 +26,7 @@ With user facing information, it's typically acceptable to present stale or part
 data. Ideally it has a disclaimer, but either way the person can evaluate whether or
 not what they've been given is usable. How often have you opened an old tab on
 your phone where the content is present, but the tab tries to refresh and fails destroying
-the content that was just there? Clearly it's better to re-serve the stale cache here.
+the content? Clearly it's better to re-serve the stale cache here.
 
 The rest of the engineering world often snubs the concept of "software engineering" and
 they've got a point. We're not restricted by the physical world, so we rightfully do a 
@@ -51,45 +51,40 @@ processor[^2].
 
 Failure can be a part of our expectations though. Indeed in cloud architecture patterns you write code that *expects* failure and handles
 it gracefully. This raises the question, what's the difference between best effort and fault tolerance? A fault tolerant system can be a
-system in which their is redundancy such that if a single sub-component fails, another is in place to fulfill its responsibilities. We see
-this in systems where many servers are behind a load balancer. Another type of fault tolerance is the ability to detect a failure and place
+system can be *redundant*, or *terminating*.
+
+A **redundant system** is designed such that if a single sub-component fails, another is in place to fulfill its responsibilities. 
+We see this in systems where many servers are behind a load balancer. Whereas a **terminating system** has the ability to detect a failure and place
 the system into a deterministic state. This is the type we are concerned with.
 
 There are many ways to remain deterministic. Bad requests can go to a poison queue, you can log an error and return an 5XX status code, you can pass
-the error through to the next layer in the chain if it makes sense to[^3]
+the error through to the next layer in the chain if it makes sense to.[^3]
 
 This is the critical distinction between fault tolerant and best effort. Best effort may or may not succeed, and failures are not guaranteed
 to be marked or communicated. This term is often misused so you may have encountered a function that describes itself as best effort, but
-returns a failure signal. This isn't a good description. If you are consistent you would describe almost everything that your program does is best effort.
-Even if you disagree, let's proceed with these definitions.
+returns a failure signal. This isn't a good description. If we accepted this and were consistent, we would then describe almost everything as best effort.
 
 ## Eventual **In**consistency
 
 Most of us are exposed to the concept of eventual consistency when we learn about NoSQL databases. If we want to scale high enough, it isn't possible to 
 have a fully consistent system in which all parts agree on the current state. It might be tempting to say that this is best effort then, but it isn't. The
-rules of the came are clear. If data is written, it takes `X` time to replicate. If multiple conflicting writes occur, they resolved using resolution `Y`.
-There is never undefined behavior, errors are predictable (data missing, or stale). We can design our software to account for any faults that occur.
+rules of the game are clear. If data is written, it takes `X` time to replicate. If multiple conflicting writes occur, they are resolved by strategy `Y`.
+There is never undefined behavior because errors are predictable (data missing, or stale) and we can design our software to account for them.
 
-DNS is also eventually consistent, but it doesn't have a formal model in the same way a database does. There is a conflict resolution method in that the data
-is centralized by register, but in terms of replication their are no guarantees. This is why you can have issues with DNS. If you register a new domain, one
-computer may notice it almost instantly while another may take several days to do so. The data is relatively static though, so the consequences of this are
-generally insignificant.
+Let's consider how a cloud VM is provisioned. A server receives the request and writes a new record into a central data store. This store may or may
+not have internal eventual consistency. A provisioning service will notice this change and pick a physical server to put the VM on. This will fan out into multiple operations in disparate parts of the data center each with it's own delays. Finally all of the changes need to propagate to the host so that it can
+create and configure the new VM. This is a gross oversimplification of the process but we can see it is replete with eventual consistency.
 
-Compare this to provisioning a VM in a public cloud. A server receives the request and writes a new record into a central data store. This store may or may
-not have internal eventual consistency. Additionally a provisioning service will get the request and pick a physical server to put the VM on. This is going
-to be written in yet another store with it's own delays, and then that change needs to propagate to the host. The host then needs to take time to respond to
-the change and actually create and configure the new VM. This is a gross oversimplification of the process and yet we can see it is replete with eventual
-consistency.
+These are dozens of custom services interacting, so there's no inherent consistency model we can rely on. If you want a database, you can outsource to Cassandra. You can't outsource this, because this is the very product that's being sold to
+abstract away difficulty for others. Errors will creep in you rely on best effort instead of coordinating consistency at every layer in the stack. These will be issues in the skyscraper. It is critical that errors are detected and explicitly handled less you poison the system.
 
-These are dozens of services coordinating across the world. It's all custom software, so there's no inherent coherency model or application we can export
-responsibility to. If you want a database, you can outsource to Cassandra. You can't outsource this, because this is the very product that's being sold to
-abstract away difficulty. If you don't create a coherent data model at every layer in the stack, errors will creep in. If you allow for best effort, they will be issues in the skyscraper. It is critical that errors are detected and explicitly handled less you poison the system.
-
-In the same way that an issue with the plumbing under your home can cause the second floor shower to flood, errors lower in the stack will result in 
-confusing errors downstream. I like to call such systems "eventually **in**consistent". They work most of the time, but everything is best effort. Eventually
+In the same way that an issue with the plumbing under your home can cause the second floor shower to flood, best effort induced errors lower in the stack will result in 
+confusing errors in distant places. I like to call such systems "eventually **in**consistent". They work most of the time, but everything is best effort. Eventually
 those efforts will fail and introduce inconsistency into the system that it isn't designed to accommodate.
 
-## This is why we can't have nice things
+We want errors to surface at their source.
+
+## Stochastic failures create chaos
 
 Going back to PostgreSQL, why was the customer unable to connect to their database? The first issue was the database IP address was configured to use the 
 second NIC of the VM, which didn't exist. Provisioning took the first look and determined that the information they had been provided by the platform was
@@ -117,7 +112,7 @@ The order in which these would finish was nondeterministic, and the results were
 source of issues in other incidents. Customers suddenly reported that their NICs were being ordered incorrectly in large numbers. Because the leftmost node
 had made recent cache changes, it was presumed by the other layers that was the issue. With much effort, it was demonstrated that what actually happened was the NIC provisioning times had been optimized. Previously they were slow enough that they would end up in the right order. Now that they were faster, the race condition that was always present was rearing its head.
 
-The solution was to inform the aggregation tier up front how many NICs to expect notifications for, and to index the notifications to guarantee ordering. If the request comes to early, the aggregator returns an error.
+The solution to both issues was to inform the aggregation tier up front how many NICs to expect notifications for, and to index the notifications to guarantee ordering.
 
 <pre class="mermaid">
 graph RL
@@ -126,34 +121,45 @@ A -->|"2. NIC 1"| B
 A -->|"3. NIC 2"| B
 </pre>
 
+If the request comes too early (meaning the aggregator hasn't received all data yet), the aggregator returns an error.
+
+<pre class="mermaid">
+graph RL
+A[NIC Programmer] -->|1. 2 NICs Incoming| B[NIC Aggregator] -->|ERROR| C[Passthrough via HTTP]
+A -->|"2. NIC 1 (delayed)"| B
+A -->|"3. NIC 2"| B
+</pre>
+
 ## Application
 
-While the bugs here are pretty obvious, the point here is the stochastic nature in which they failed. The failure wasn't localized to the actual source, a
-synchronization bug in the inner layers of the networking subsystem. Instead it was allowed to propagate all the way through until it presented in a confusing way, requiring immense expenditure to figure out and negatively impacting the customer. Much like the steal girders, they would have much preferred
-that we gave them *no VM* by failing on provision that provisioning a corrupted VM they had to debug. Race conditions happen, but best effort is often presented as a feature and not a bug.
+While the bugs here are straight-forward, the failure wasn't localized to the actual source (a
+synchronization bug in the inner layers of the networking subsystem). Instead it was allowed to propagate all the way through until it presented in a confusing and labor intensive way. Much like with steel girders, the customer would have much preferred that we gave them *no VM* instead of a *corrupted VM*. Customers expect provisioning to fail sometimes and have processes to account for it, they don't
+have systems to handle when a corrupted VM is given to them.
 
-Best effort is not a feature. It is poison for distributed systems. It violates invariants, which introduces failures that are extremely expensive to debug. Our goal should be to root it out at every level and remain deterministic. In the examples we reviewed the producer and the consumer had opportunities to address the issue. Here are the strategies each side should have been applying.
+Race conditions happen, but best effort is often presented as a feature and not a bug. Best effort is not a feature. It is poison for distributed systems. It violates invariants, which introduces failures that are extremely expensive to debug. Our goal should be to root it out at every level and remain deterministic.
+
+In the examples we reviewed the producer and the consumer had opportunities to address the issue. Here are the strategies each side should have been applying.
 
 ### In general
 
 Be suspicious when someone says it's best effort. Be particularly suspicious when it's brought up in the context of explaining behavior during an incident.
-In the beginning we considered why you might naively do it on purpose, but in practice it's often unintentional. People will post-hoc try to rationalize what's clearly a race condition they failed to consider properly at time of writing.
+In the beginning we considered why you might errantly do it on purpose, but in practice it's often unintentional. When faced with a production race condition,
+it's very easy to fall into the trap of post-hoc rationalizing the problematic behavior.
 
 ### As the producer
 
 1. Set expectations up front
    1. Is data guaranteed to be whole?
    2. What is the latency of any eventual consistency in the system?
-   3. How do I tell if I'm getting stale or incomplete data
-2. Never lie to your customer. If you can't guarantee accuracy either fail or mark the data
-   1. Sometimes you have mixed needs. Some of your users may prefer the best effort data. Others might be sensitive to accuracy like the provisioning example. One way to handle this is to return an error code, but include a best effort response. Then the client can decide to trust it or not. For instance, you could have:
+   3. How do I communicate if stale or incomplete data is returned?
+2. Never lie to your customer. If you can't guarantee accuracy either fail or mark the data. Some of your users may prefer the best effort data while others might be sensitive to accuracy. One way to handle this is to return an error code, but include a best effort response. Then the client can decide to trust it or not. For instance, you could have the stale cache value:
 
    ```json
     200
     { "foo": "bar" }
    ```
 
-   vs
+   become:
 
    ```json
     503
@@ -165,11 +171,11 @@ In the beginning we considered why you might naively do it on purpose, but in pr
 
 ### As the caller
 
-1. Demand excellence from your producer. If it's an internal team, you're their customer. Make sure they treat you accordingly. Insist on strong, explicit contracts.
+1. Demand excellence from your producer. If it's an internal team, you're *their customer*. Make sure they treat you accordingly. Insist on strong, explicit contracts.
 2. Figure out your invariants. What expectations do you have?
 3. Create strong boundaries for external input
-   1. Guarantee invariants. If you're calling to external code or taking user input, you can't assume that it's valid.
-   2. Detect when invariants are violated and pick a deterministic failure state behavior. Don't lie by passing it along blindly. If you must pass it along, do so with wrapping (treat it as "inner error" and log the context of the failure).
+   1. Guarantee invariants. You can't assume data from external code or user input is valid.
+   2. Detect when invariants are violated and fail deterministically. Try to encapsulate failures, but if you must pass them up do so with wrapping (treat it as "inner error" and log the context of the failure).
    3. Force all external data through facades that convert to internal representations that are known good. Never allow bad data in. This will also simplify the rest of your code, because it can trust that input is valid and you won't need redundant checks everywhere.
 
 #### Footnotes

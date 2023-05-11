@@ -17,11 +17,11 @@ I got into programming more seriously in
 high school writing a mix of mostly 2D games and [funny malware](https://github.com/LittleBoxOfSunshine/RickRollKeyboard) before getting my masters
 in CS specializing in security and computer architecture.
 
-There my research projects included devising exploits for the [DOMINO](https://www.usenix.org/legacy/publications/library/proceedings/mobisys04/pdf/p84-raya.pdf) protocol concept to steal bandwidth in IEEE 802.11 (WiFi) networks and creating designs for high performance arithmetic circuitry. You can view this legacy content on the [Long Form](/long-form) page. 
+Some of my research projects included:
 
-While I'll mostly focus on general topics, I'm sure that from time to time I'll dive into the more esoteric topics
-I used to research. I've worked at companies ranging from startups to global enterprises as a security engineer and as a traditional software engineer.
+- Creating designs for [high performance arithmetic circuitry](/assets/pdfs/rns-macs.pdf) to accelerate computer vision models
+- Devising exploits for the `DOMINO` protocol concept to [steal bandwidth in WiFi networks](/assets/pdfs/domino-exploits.pdf).
 
-My current day job is to build the foundation of the cloud. These days I'm most interested in
+My current day job is systems engineering for the physical nodes powering Azure as a senior engineer at Microsoft. These days I'm most interested in
 distributed systems, libraries, and bringing rigorous discipline to the software field
 so that we may one day take our place along side the real engineers.

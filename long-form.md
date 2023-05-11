@@ -13,10 +13,9 @@ the idea that it shows growth over time and it's interesting to reflect on work 
 
 ## Graduate Research
 
-- [Defeating DOMINO to Obtain Unfair Amounts of
-Service in IEEE 802.11 Hotspots](/assets/pdfs/domino-exploits.pdf)
-- [Comparing High Throughput 16-bit MACs Using
-Residue Number System and Pipelining](/assets/pdfs/rns-macs.pdf)
+- [High Throughput 16-bit MACs Using Residue Number System and Pipelining](/assets/pdfs/rns-macs.pdf)
+- [Defeating DOMINO to Obtain Unfair Amounts of Service in IEEE 802.11 Hotspots](/assets/pdfs/domino-exploits.pdf)
+- [Economic Benefits of Value-Based Approaches to Computer Security Assurance Over Compliance-Based Approaches](/assets/pdfs/value-based-security.pdf)
 
 ## Undergraduate Research
 

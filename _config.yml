@@ -23,12 +23,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   I'm Chris Henk, a software engineer in Seattle working on
   libraries and distributed systems. I'm known for strong 
   having opinions, but am always movable by stronger arguments.
-# google_analytics: <ID HERE>
+google_analytics: 
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: ghastlypropositions.github.io
 url: https://ghastlypropositions.github.io
 # twitter_username:
 github_username: LittleBoxOfSunshine
+linkedin_username: chris-henk
 
 # Build settings
 theme: minima
