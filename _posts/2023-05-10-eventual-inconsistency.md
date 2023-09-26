@@ -75,7 +75,7 @@ not have internal eventual consistency. A provisioning service will notice this 
 create and configure the new VM. This is a gross oversimplification of the process but we can see it is replete with eventual consistency.
 
 These are dozens of custom services interacting, so there's no inherent consistency model we can rely on. If you want a database, you can outsource to Cassandra. You can't outsource this, because this is the very product that's being sold to
-abstract away difficulty for others. Errors will creep in you rely on best effort instead of coordinating consistency at every layer in the stack. These will be issues in the skyscraper. It is critical that errors are detected and explicitly handled less you poison the system.
+abstract away difficulty for others. Errors will creep in if you rely on best effort instead of coordinating consistency at every layer in the stack. These will be issues in the skyscraper. It is critical that errors are detected and explicitly handled less you poison the system.
 
 In the same way that an issue with the plumbing under your home can cause the second floor shower to flood, best effort induced errors lower in the stack will result in 
 confusing errors in distant places. I like to call such systems "eventually **in**consistent". They work most of the time, but everything is best effort. Eventually
