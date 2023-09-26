@@ -7,8 +7,6 @@ categories: policy
 
 > *There's no such thing as built to last. Built to last is built to repair*
 
-# Repairing a Bike Pump
-
 I'm sure by now you've seen something about the *Right to Repair* movement. Be it Apple or John Deere, Tesla or BMW, mega corporations have been facing resistance to their antics that's far over due. Right to repair isn't a great name for the movement. It's not something people generally care or think about. Besides who repairs their own stuff these days?
 
 What's missed are two factors. Right to repair is really right to own, and even if *you* don't personally plan on repairing your property it includes the right for you to take it to a 3rd party professional of your choice to repair it on your behalf.
@@ -29,7 +27,7 @@ The [trouble shooting guide]([Floor Pump Handle Pushes Back Up – Lezyne Custom
 
 ### The Actual Repair
 
-Getting the pump open was straightforward, just twist off the super heavily threaded base. Then it was time . If I had one criticism of the video, it's that it makes it sound like the tool is optional. It wasn't. Maybe mine was seized up in some way that's atypical, but for whatever reason it absolutely would not budge.
+Getting the pump open was straightforward, just twist off the super heavily threaded base. Then it was time to remove the check valve cover. The cover is a cylindrical piece of metal, screwed flush into another metal piece. It's flat topped, with two ***tiny*** holes in it. You remove it by getting a tool into the two holes and applying lateral force to unscrew it. If I had one criticism of the video, it's that it makes it sound like the tool is optional. It wasn't. Maybe mine was seized up in some way that's atypical, but for whatever reason it absolutely would not budge.
 
 I had two pry tools, on in each hole, and pushed hard enough in both directions they would slip out. At this point, the smart thing to do is just buy the $11 tool. But I, being psychotic, didn't want to wait. So I used a tried and true trick; warm it up.
 
@@ -53,9 +51,9 @@ What were the key elements that led to a good outcome here? These are necessary 
 
 5. Promptly mailed to me
 
-## The Problem
+## The Problem With Repair Today
 
-We can divide the problem into 3 principal causes.
+Why did this stand out so much? A tiny piece of plastic that's a wear part fails so instead of throwing out the whole assembly with pounds of machined parts you just replace it. This is obvious. This is the default. While I think the customer service was great, I shouldn't be impressed it was even possible to fix! We can divide the problem into 4 principal causes.
 
 1. Things are built cheap or even disposable
 2. Some features are so over fixated upon it harms others
@@ -87,4 +85,3 @@ If you find value in the content, or are in the market for a bike pump or repair
 - [Lezyne Floor Pump](https://www.amazon.com/LEZYNE-Steel-Drive-Floor-Gloss/dp/B07CQ2HLF2/ref=sr_1_5?crid=A5879KKMHQX2&amp;keywords=lezyne+floor+pump&amp;qid=1695693494&amp;sprefix=lezyne+floor+pump%252Caps%252C145&amp;sr=8-5&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=e0db55127e8fc600411b089d0424006c&camp=1789&creative=9325) (high quality, repairable! bike pump)
 - [I fix it tool kit](https://www.amazon.com/iFixit-Pro-Tech-Toolkit-Electronics/dp/B01GF0KV6G/ref=sr_1_3?crid=Z75G04XGVOUV&amp;keywords=ifixit+tool+kit&amp;qid=1695693639&amp;sprefix=i+fix+it%252Caps%252C161&amp;sr=8-3&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=7e660bce01a81f36968f7c19933fecf3&camp=1789&creative=9325) (this was absolutely the wrong set of tools for the job, but I've gotten a ton of value out of my older set over the years. Not just in electronics, but for random stuff too)
 - [Spanner Bicycle Tool](https://www.amazon.com/Park-Tool-SPA-2-Cluster-Spanner/dp/B001B6LNRQ/ref=sr_1_6?crid=3NW2RZYX0L4LZ&amp;keywords=park%252Btool%252Bspanner%252Bwrench&amp;qid=1695693688&amp;sprefix=park%252Btool%252Bspanner%252Caps%252C142&amp;sr=8-6&amp;th=1&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=8c59c93909024b480d1f9615228a4027&camp=1789&creative=9325") (the actual tool for the job, if you're not possessed by obstinance)
-
