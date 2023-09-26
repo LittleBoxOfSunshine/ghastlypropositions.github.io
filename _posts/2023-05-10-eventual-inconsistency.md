@@ -54,7 +54,7 @@ it gracefully. This raises the question, what's the difference between best effo
 
 A **redundant system** is designed such that if a single sub-component fails, another is in place to fulfill its responsibilities. 
 We see this in systems where many servers are behind a load balancer. Whereas a **terminating system** has the ability to detect a failure and place
-the system into a deterministic state. This is the type we are concerned with.
+the system into a deterministic state. The circuit breaker in your home is an example. A fault is detected, so the electricity is shut off safely. This is the type we are concerned with.
 
 There are many ways to remain deterministic. Bad requests can go to a poison queue, you can log an error and return an 5XX status code, you can pass
 the error through to the next layer in the chain if it makes sense to.[^3]
