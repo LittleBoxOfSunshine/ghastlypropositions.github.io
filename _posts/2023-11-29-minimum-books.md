@@ -7,7 +7,7 @@ categories: software
 
 > As with all things in life, keep the 80/20 rule in mind
 
-As a child, I was a voracious reader and it served me well. I'll confess that as and adult I read much less. As I get more experienced, less and less still with respect to professional books. I think this checks out though. Once you have your base fleshed out, what you really need are dense, specific material. These days I find I read blogs, white papers, and standards documents. I'm still learning, it's just that the best medium for me has changed.
+As a child, I was a voracious reader and it served me well. I'll confess that as an adult I read much less. As I get more experienced, less and less still with respect to professional books. I think this checks out though. Once you have your base fleshed out, what you really need are dense, specific material. These days I find I read blogs, white papers, and standards documents. I'm still learning, it's just that the best medium for me has changed.
 
 But when I was getting started my first few years as a professional developer, these books were very formative in expanding my world view and changing how I approached things. I firmly believe that everyone should read them. That's why the list is short, it's hard to find something that *everyone* should be doing despite how different they are from one another.
 

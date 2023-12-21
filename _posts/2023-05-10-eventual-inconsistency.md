@@ -163,7 +163,8 @@ it's very easy to fall into the trap of post-hoc rationalizing the problematic b
    ```json
     503
     {
-        "error": "Could not fetch latest state",
+        "error": "StaleData",      
+        "description": "Could not fetch latest state",
         "lastKnownState": { "foo": "bar" }
     }
    ```
