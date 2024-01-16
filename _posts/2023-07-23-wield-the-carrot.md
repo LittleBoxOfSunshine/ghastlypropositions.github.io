@@ -3,6 +3,7 @@ layout: post
 title:  "Wield the Carrot as a Stick"
 date:   2023-07-23 12:00:45 -0800
 categories: business
+author: "Chris Henk"
 ---
 
 > *Some prefer the carrot, others the stick. I prefer to wield the carrot as a stick*

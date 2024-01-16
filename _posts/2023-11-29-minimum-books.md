@@ -3,6 +3,7 @@ layout: post
 title:  "Truly Minimum Books for Software Engineers"
 date:   2023-11-29 12:00:45 -0800
 categories: software
+author: "Chris Henk"
 ---
 
 > As with all things in life, keep the 80/20 rule in mind

@@ -3,6 +3,7 @@ layout: post
 title:  "Repairing a Bike Pump"
 date:   2023-09-25 12:00:45 -0800
 categories: policy
+author: "Chris Henk"
 ---
 
 > *There's no such thing as built to last. Built to last is built to repair*

@@ -3,6 +3,7 @@ layout: post
 title:  "Eventual Inconsistency: How \"best effort\" destroys distributed systems"
 date:   2023-05-10 12:00:45 -0800
 categories: software
+author: "Chris Henk"
 ---
 
 `Cannot connect to PostgreSQL database`
