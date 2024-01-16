@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deprecated vs Deleted"
-date:   2023-01-03 12:00:45 -0800
+date:   2024-01-03 12:00:45 -0800
 categories: software
 author: "Chris Henk"
 ---
