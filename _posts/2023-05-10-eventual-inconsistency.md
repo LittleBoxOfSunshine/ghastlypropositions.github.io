@@ -45,7 +45,7 @@ When you're working in distributed systems, you're in the skyscraper.
 
 ## What is best effort?
 
-Computers aren't smart. They're exceptionally dumb. Yes, even chat-gpt[^1]. Unlike human users, they are *not* capable of evaluating
+Computers aren't smart. They're exceptionally dumb. Yes, [even ChatGPT](./2024-01-10-chat-gpt-dumb.md)[^1]. Unlike human users, they are *not* capable of evaluating
 whether or not the data they've been given is usable. Inputs must conform precisely to the expectations of the receiver or the behavior
 will be undefined. There is no escaping this, as it's fundamental even down to the arrangement of the individual transistors in your
 processor[^2].
@@ -181,7 +181,7 @@ it's very easy to fall into the trap of post-hoc rationalizing the problematic b
 
 #### Footnotes
 
-[^1]: Try searching 57686174277320746865207765617468657220746F6461793F on chat-gpt. It will fail to realize it's hex (unless my experiment trained it 😉). If you give that hint, it will figure it out and figure out any future hex prompt you give it. This is *extremely* impressive, but it isn't higher level reasoning. An human programmer immediately recognizes this is hex and will try decoding it first. The point here is even a flexible language model is easily baffled by invariants (in this case not using utf-8 encoding) being violated. If the most advanced flexible input program in the world can't handle unexpected inputs, how is your small application going to?
+[^1]: Try searching 57686174277320746865207765617468657220746F6461793F on chat-gpt. It will fail to realize it's hex (unless my experiment trained it 😉). If you give that hint, it will figure it out and figure out any future hex prompt you give it. This is *extremely* impressive, but it isn't higher level reasoning. An human programmer immediately recognizes this is hex and will try decoding it first. The point here is even a flexible language model is easily baffled by invariants (in this case not using utf-8 encoding) being violated. If the most advanced flexible input program in the world can't handle unexpected inputs, how is your small application going to? Update: see full discussion [here](./2024-01-10-chat-gpt-dumb.md).
 
 [^2]: Expect a future post on why this is inescapable, and what it means for "defensive programming"!
 
