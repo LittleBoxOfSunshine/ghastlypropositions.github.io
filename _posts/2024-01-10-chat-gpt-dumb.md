@@ -60,7 +60,7 @@ Surely this is the most basic type of true problem solving and self-learning. So
 
 ### Example 1: Hex Encoded Prompt
 
-![image-20240120161613469](./chatgpt-is-dumb.assets/image-20240120161613469.png)
+![image-20240120161613469](/assets/img/chatgpt-is-dumb.assets/image-20240120161613469.png)
 
 We're not off to a good start here...
 
@@ -68,7 +68,7 @@ We're not off to a good start here...
 
 Ok, but ChatGPT is pretty clever after all and it can do problem solving to some extent. Let's give it a hint and point out that it already knows how to answer this prompt, it just didn't realize it:
 
-![image-20240120161639506](./chatgpt-is-dumb.assets/image-20240120161639506.png)
+![image-20240120161639506](/assets/img/chatgpt-is-dumb.assets/image-20240120161639506.png)
 
 What this really underscores is just how basic the basic problem solving skills the AI has actually are.
 
@@ -76,15 +76,15 @@ What this really underscores is just how basic the basic problem solving skills 
 
 But let's not do the people at OpenAI dirty, this is still an incredible feat. And it goes further. Not only was the AI able to do something with minimal prompting, it's now learned a new pattern. When I prompt in the same chat with new hex encoded questions, it deploys this lesson on its own initiative:
 
-![image-20240120161806104](./chatgpt-is-dumb.assets/image-20240120161806104.png)
+![image-20240120161806104](/assets/img/chatgpt-is-dumb.assets/image-20240120161806104.png)
 
 Now what's really interesting is when I open new chat windows without the prior context. Did the AI learn my hint? Well, sometimes it did and sometimes I didn't some of these were tried months apart, so the model versions were different. But I couldn't find a consistent pattern to what it would do. Sometimes it did everything in one step, sometimes it identified the steps and asked if it would like me to proceed, and sometimes it would suggest what some potential steps would be. 
 
-![image-20240120161806104](./chatgpt-is-dumb.assets/image-20240120161806104.png)
+![image-20240120161806104](/assets/img/chatgpt-is-dumb.assets/image-20240120161806104.png)
 
-![image-20240120161817420](./chatgpt-is-dumb.assets/image-20240120161817420.png)
+![image-20240120161817420](/assets/img/chatgpt-is-dumb.assets/image-20240120161817420.png)
 
-![image-20240120161752546](./chatgpt-is-dumb.assets/image-20240120161752546.png)
+![image-20240120161752546](/assets/img/chatgpt-is-dumb.assets/image-20240120161752546.png)
 
 Remember though, as impressive as this is even if it always worked this still is demonstrating crystallized intelligence, not fluid intelligence. The AI didn't come up with this on it's own, I taught it. This is no different at a thinking level than how the people at OpenAI taught it its baseline knowledge. 
 
