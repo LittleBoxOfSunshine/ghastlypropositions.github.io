@@ -17,11 +17,11 @@ ChatGPT is capable of truly impressive Natural Language Processing. It has more 
 
 It's no wonder then that we're blown away by this. Alan Turing famously proposed "The Turing Test" as a methodology to assess a machine's ability to exhibit intelligence that is indistinguishable from human intelligence. This has even made it into the culture somewhat, as many layman are aware of it. The idea is you have a person ask written questions and put them into two slots. Behind one is a human and the other a computer. If the person asking questions can't tell which is which, then the computer has passed the test.
 
-Let's get something clear though, the Turing Test demonstrates that the intelligence, with respect to this task, is *indistinguishable* from a human **not** that is it *equivalent*. This is an exceedingly common misunderstanding. If I search "how do we measure intelligence in computers" into Google, my first three results are all making this mistake:
+Let's get something clear though, the Turing Test demonstrates that the intelligence, with respect to this task, is *indistinguishable* from a human **not** that is it *equivalent*. This is an exceedingly common misunderstanding. If I search "how do we measure intelligence in computers" into Google, my first three results are all making this mistake[^0]:
 
-1. [What is the Turing Test that determines if computers can think? - ABC News (go.com)](https://abcnews.go.com/US/turing-test-determines-computers/story?id=101486628#:~:text=The Turing Test is arguably,learning for several years beforehand.)
-2. [What is the Turing Test? | Definition from TechTarget](https://www.techtarget.com/searchenterpriseai/definition/Turing-test)
-3. https://www.techtarget.com/searchenterpriseai/definition/Turing-test
+1. [What is the Turing Test that determines if computers can think? - ABC News (go.com)](https://abcnews.go.com/US/turing-test-determines-computers/story?id=101486628#:~:text=The%20Turing%20Test%20is%20arguably,learning%20for%20several%20years%20beforehand.)
+2. [What is the Turing Test? \| Definition from TechTarget](https://www.techtarget.com/searchenterpriseai/definition/Turing-test)
+3. [The Turing Test: What Is It, What Can Pass It, and Limitations](https://www.investopedia.com/terms/t/turing-test.asp)
 
 While I'm not familiar enough with Turing's work to say if he thought it could measure both or not, I concur with philosopher John Searle that the test can't demonstrate consciousness or an equivalence to human thinking. If you'd like an explanation for why his thought experiment the [Chinese room](https://en.wikipedia.org/wiki/Chinese_room) argument gives an excellent logical breakdown. If you really want some existential dread, you can take it further and apply the same type of logic to human brains themselves. For those that find the argument unconvincing, consider this. A digital computer is just doing math, following an algorithm. If it can be conscious, than if I perform the same math in the same order on a gigantic sheet of paper, does that paper and/or the markings become conscious?
 
@@ -114,6 +114,7 @@ This concept (breaking down a problem into smaller, simpler parts t hat can be d
 
 Basic automation and leveraging cheaper workers devastated the rust belt. AI is this same thing on a whole other level. It takes time and money to build factories. I can deploy or upgrade software instantly and for essentially free. As AI improves it will have a profound impact on the world, because it's the thinking equivalent to the first machines and factories of the industrial revolution.
 
+[^0]: The articles all might go on to explain properly, I didn't read them. I just found a snippet with the wording I described.
 [^1]: [How General Intelligence (G Factor) Is Determined (verywellmind.com)](https://www.verywellmind.com/what-is-general-intelligence-2795210)
 [^2]: [Age differences in fluid and crystallized intelligence - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/000169186790011X?via%3Dihub)
 [^3]: It's worth noting, "novel" as a concept is one of those "what is truth questions?". You can make sound arguments humans aren't capable of novel thinking either. So for our purposed, we just mean in the common sense the word is used.
