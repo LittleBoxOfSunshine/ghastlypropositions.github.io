@@ -28,9 +28,9 @@ While I'm not familiar enough with Turing's work to say if he thought it could m
 
 There are more fundamental challenges as well. The test uses written text, not speech, so that the quality of the computer generated voice isn't a give away. This belies a significant point, that understanding speech is more difficult than reading is. Firstly, understanding speech is just language + parsing the sound to extract the words. The computer gets the words given in perfect form and is doing a subset of the work. A retort could be well reading with your eyes still requires this first step! But even then, that's still easier. The number of ways the character A can be written is simpler and fewer in number than the number of ways it can be spoken.
 
-> *If the human brain were so simple that we could understand it, we would be so simple that we couldn't*. - A Paradox posed by Emerson M. Pugh
-
 ## What Does it Mean to be Intelligent?
+
+> *If the human brain were so simple that we could understand it, we would be so simple that we couldn't*. - Paradox posed by Emerson M. Pugh
 
 This is a hard question. It quickly gets into the "what is truth?" wing of philosophy. So much has to be taken for granted to even begin evaluating the question rigorously. Spend some time thinking how to answer the question "what is a chair?" after considering the basic ideas of [Mereological Nihilism](https://en.wikipedia.org/wiki/Mereological_nihilism) (which would posit that there are no chairs) to get a good feel for what I mean if you're never been exposed to Epistemology before.
 
