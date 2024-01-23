@@ -30,7 +30,7 @@ However, that's still a decision you need to make! Just because you are given a 
 
 ## Human Error? No, Bad Design
 
-As mentioned in my [recommended books]({% post_url2023-11-29-minimum-books %}) post, I'm a fan of Don Norman's [The Design of Everyday Things](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1701498408&sr=8-1&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=9a4bd7a7f9bafb73beb39e262d1d7dec&camp=1789&creative=9325). In that book, there are chapters explaining that most of what is chalked up to human error is really in practice a consequence of bad design. The idea we are concerned with today is the notion of *Constraints* in design:
+As mentioned in my [recommended books]({% post_url 2023-11-29-minimum-books %}) post, I'm a fan of Don Norman's [The Design of Everyday Things](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1701498408&sr=8-1&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=9a4bd7a7f9bafb73beb39e262d1d7dec&camp=1789&creative=9325). In that book, there are chapters explaining that most of what is chalked up to human error is really in practice a consequence of bad design. The idea we are concerned with today is the notion of *Constraints* in design:
 
 > Constraints powerful clues, limiting the set of possible actions. The thoughtful use of constraints in design lets people readily determine the proper course of action, even in a novel situation. - Don Norman
 
@@ -95,4 +95,4 @@ A tried and true method is to use conditional compilation with debug asserts. Ha
 
 The production implementation of debug assert still needs to be highly visible. When it triggers, it should be automatically creating a high severity incident according to whatever process and tools you use to monitor service health.
 
-Again though, really consider if this is actually "better". If you're going into the last known good state / rollback, then sure. If you're not, it's suspect. Is applying some arbitrary state really solving the issue, or are you just trading one set of bugs for another? Have you tested that this mechanism actually behaves the way you think it does? As discussed in my first post on [eventual inconsistency]({% post_url2023-05-10-eventual-inconsistency %}), this might not be the better path you're envisioning it to be.
+Again though, really consider if this is actually "better". If you're going into the last known good state / rollback, then sure. If you're not, it's suspect. Is applying some arbitrary state really solving the issue, or are you just trading one set of bugs for another? Have you tested that this mechanism actually behaves the way you think it does? As discussed in my first post on [eventual inconsistency]({% post_url 2023-05-10-eventual-inconsistency %}), this might not be the better path you're envisioning it to be.
