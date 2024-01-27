@@ -45,7 +45,7 @@ When you're working in distributed systems, you're in the skyscraper.
 
 ## What is best effort?
 
-Computers aren't smart. They're exceptionally dumb. Yes, [even ChatGPT](./2024-01-10-chat-gpt-dumb.md)[^1]. Unlike human users, they are *not* capable of evaluating
+Computers aren't smart. They're exceptionally dumb. Yes, [even ChatGPT]({% post_url 2024-01-10-chat-gpt-dumb %})[^1]. Unlike human users, they are *not* capable of evaluating
 whether or not the data they've been given is usable. Inputs must conform precisely to the expectations of the receiver or the behavior
 will be undefined. There is no escaping this, as it's fundamental even down to the arrangement of the individual transistors in your
 processor[^2].
