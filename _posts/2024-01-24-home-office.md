@@ -20,6 +20,29 @@ But, don't pay business prices either. Consider value oriented items from compan
 
 ## The Core
 
+The core of any setup is the desk and chair. Before you select them, get familiar with what proper erognomics are. The short version is your legs should rest comfortabley on the floor at a 90 degree angle, with thighs supported. You back and shoulders should be upright and supported. Your eyes should be level with the center of the screen. If you're looking up or down, the height is wrong. As an aside, this is why a laptop should never be used at a desk by itself for more than 10 or 15 minutes tops.
+
+Consider there is more than one correct setup. For instance, I prefer to sit with my chair pulled up very close to the desk and the desk height low enough that it serves partially as an armrest and keeps my wrists level. This just means I need to bump my screens up higher.
+
+### Desk
+
+Get a sit-stand desk. They're affordable, and maximally flexible. Even if you don't want a standing desk, having an adjustable height desk means you can dial in the ergonomics precisely and do other tasks. Trying to repair something? Move your keyboard and adjust the height to get a comfortable work surface. Additionally, I do think you'll find standing on occasion is nice. Especially for long meetings where it's nice to be able to move around a bit and you're probably not typing much anyway.
+
+There are plenty out there, this is the one I've had for the last 6 years: [Autonomous SmartDesk Pro](https://www.autonomous.ai/standing-desks/smartdesk-2-business).
+
+There is a cheaper one that's better for most people. I just have a lot of monitors and a heavy computer on it, so I prefered the dual motor version because of that weight: [Autonomous SmartDesk Core](https://www.autonomous.ai/standing-desks/smartdesk-2-home).
+
+### Chair
+
+Get a real business chair. They're so much better. However, just because you should get a thousand dollar chair doesn't mean you should pay a thousand dollars for it. The best option is to find the local sell off of equipement from a failed business near you. If that doesn't exist, or seems like to much work, there are retailers that sell refurbished models that are indistinguishable from the new model for half or even a quarter the price.
+
+If you're not sure where to start, here are two classics. You can't go wrong with other. The Aeron is highly renouned, and ideal if you're above 6ft tall. If you're a normal height, I think the Leap V2 is a serriously underrated option. It isn't mesh based and is a bit cheaper. It's what I have personally.
+
+Example from a refurbished reseller:
+
+- [Steelcase Leap V2](https://www.madisonseating.com/shop/leap-chair-v2-in-black-fabric-by-steelcase/)
+- [Herman Miller Aeron](https://www.madisonseating.com/shop/aeron-chair-by-herman-miller-highly-adjustable-carbon/)
+
 ### The Conditional Core
 
 I'll confess, I used to consider this optional. Then I started having issues with plantar fasciitis because of increased walking, shoes well past end of life, and increased work from home. Here's something that might not be obvious at first. If you work out of the home, you spend most of the time standing or walking with soft support for your feet. If you're working from home, this might not be the case. You're standing and walking in your bare feet, often on hard surfaces. No wonder my feet were hurting more.
@@ -28,23 +51,14 @@ Next, I recognize it looks goofy and gimmicky with the hump in the middle. But I
 
 Standing desk owners, listen up! Even if you wear house shoes, even if you wear slippers, having a standing mat makes so much more of a difference than you can imagine. GET ONE. Don't be stupid, learn from my mistakes.
 
-- For fellow big boys and anyone over 5' 4, there is the [full size model](https://amzn.to/3SzI29e) (over)
-- For those that can walk confidently through any airplane door or just don't have the floor space, there is the [reduced size "mini" model](https://amzn.to/42d4x72)
+- For fellow big boys and anyone over 5' 4, there is the [full size model](https://amzn.to/3SzI29e).
+- For those that can walk confidently through any airplane door or just doesn't have the floor space, there is the [reduced size "mini" model](https://amzn.to/42d4x72).
 
 ## Computing
 
-### Monitor Layouts
+If you need a desktop, you know who you are already. If you're not sure, then you can get away with a docked laptop. A docked laptop only experience is very nice. It saves money, and means when you switch locations you come back to exactly where you left off. Even compute heavy work like programming is pretty laptop friendly these days (how often do you full build vs incremental build?). If you need the desktop, I'd build it yourself or use a botique builder such as [Puget Systems](https://www.pugetsystems.com/) or [System 76](https://system76.com/). You're already paying the markup, why not get something better for your money?
 
-### Travel
-
-Get a high power portable charger. It's a majorly underrated way to improve travel experience. They're tiny, charge faster, charge multiple devices at once, and can replace every single charger you need, including for your laptop.
-
-- For most cases, get the [smaller 65W Anker charger](https://amzn.to/3SgI8RD)
-- If you have a power hungry laptop, get the [larger 120W Anker charger](https://amzn.to/3uao3o4)
-    - It's worth noting this probably isn't needed even if your laptop is very high power draw. I have the [older 65W model](https://amzn.to/3SgI8RD), which means my laptop can actually outpace it. However, this just means it goes steady state instead of charging during *maximum sustained usage*. Unless you're doing something like video rendering, you're probably fine.
-    - The other consideration is this model will fast charge faster for some laptops. Consider what the wattage of the factory charger is, and how badly you need that full performance. For me, this didn't exist when I bought my 65W one and I haven't been compelled to upgrade. Yes, it fast charges slower but it's still charging fast and my laptop battery lasts 12+ hours so I'm never desperate to get an instant full charge in.
-
-### If You Dock Your Laptop
+### If Your Primary Device is a Laptop
 
 If you do work on your laptop, you need to start docking it. You'll be more productive and laptops are designed for portability not for long term use. It's bad for your neck, shoulders, eyes, and back to be hunched over one all day.
 
@@ -58,6 +72,65 @@ This works perfectly for my girlfriend, who docks her laptop with a monitor for 
 
 - [Anker Single Screen Hub](https://www.amazon.com/gp/product/B087QZVQJX/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;th=1&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=a3f2afb561d1f4ea1c0b21d756ff7220&camp=1789&creative=9325)
 - [The Monitor](https://www.amazon.com/LG-27UN850-W-DisplayHDR-Borderless-Adjustable/dp/B08CVTTNN4/ref=sr_1_3?crid=30E4ZAZ8BJM0W&amp;keywords=lg%252B4k%252Bmonitor%252B27%252Binch&amp;qid=1705961646&amp;sprefix=lg%252B4k%252Bmonitor%252B27%252Binc%252Caps%252C124&amp;sr=8-3&amp;th=1&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=6943ffe903587a6b1cc29df9ccb1cdb7&camp=1789&creative=9325) that my girlfriend prefers for this experience.
+
+### Input Devices
+
+Get. A. Real. Keyboard. Don't type on a laptop. There's no excuse for this and it's strictly inferior. If you're not doing a ton of data entry, I recommend getting a 10-keyless model. This leaves more space for your mouse and thus better ergonomics. Even if you do data entry, consider getting the smaller keyboard and a seperate numeric keypad you slide down only for data entry tasks.
+
+External keyboards with low profile laptop style keys are popular. Especially since the typing experience feels similar to your laptop. I don't personally care for them, and use a mechanical keyboard instead. If you want to try mechanical but don't want to go down the huge rabbit whole, give "brown" switches a go. They're perfect for office work and won't make as much noise. I prefer Cherry MX brand ones, but other companies have really stepped up their game over the years.
+
+Get a full size, ergonomic mouse. The magic mouse is an abomination. Using portable laptop style mice at a desk makes no sense.
+
+My personal favorite is the [Logitech MX Master Series](https://amzn.to/3HC5Y5p). There are many options, but be sure you get the one that's meant for your operating system. They'll work with any, but pairing properly can let some bonus features work better.
+
+### Monitor Layouts
+
+When selecting a monitor, don't only look at the resolution. Consider:
+
+1. Resolution
+    - If your monitor is at least 27", then get a resolution of at least 2560x1440p. 1080p is noticably worse at this size. 4K is fine, but overkill so just don't pay a bunch extra for it.
+    - 24" at 1080p is very similar to 1440p at 27", and can pair well together.
+1. Stand **must be** adjustable
+1. The panel type (If you're unfamiliar just pick IPS. It's high quality with good viewing angles meaning the screen looks the same from an angle as it does sitting directly in front of it)
+1. The refresh rate
+1. The input type. Both display port + HDMI is best, if only one just make sure it matches what your computer outputs.
+
+For number of screens, the right number is almost always 2. 1 is wrong unless you literally don't have the space. 3 is getting into diminishing returns and can get unweidly. I've tried many, many combinations over the years but have settled on portrait 27" screen + a 1440p 34" ultrawide.
+
+If you're using a desktop, consider:
+
+1. Single Ultrawide, which can effectively be two screens.
+1. Portrait + Ultrawide in Landscape
+1. 2 Normal Landscape Screens
+1. Portrait + Landscape + Portrait
+
+If docking your laptop but using the laptop screen as well (*elevated*, remember from before!):
+
+1. Single Landscape
+1. Single Ultrawide
+
+My recommended monitors:
+
+- [27"]((https://www.amazon.com/LG-27UN850-W-DisplayHDR-Borderless-Adjustable/dp/B08CVTTNN4/ref=sr_1_3?crid=30E4ZAZ8BJM0W&amp;keywords=lg%252B4k%252Bmonitor%252B27%252Binch&amp;qid=1705961646&amp;sprefix=lg%252B4k%252Bmonitor%252B27%252Binc%252Caps%252C124&amp;sr=8-3&amp;th=1&_encoding=UTF8&tag=ghastlypropos-20&linkCode=ur2&linkId=6943ffe903587a6b1cc29df9ccb1cdb7&camp=1789&creative=9325))
+- [24"](https://amzn.to/3SjDZwa). This has a higher than normal refresh rate which is nice, but warning it can't tilt portrait like my older model can. Consider finding model with equivalent specs but a better stand than this one.
+- [Ultrawide](https://amzn.to/47OFKqV). This has a *really* high refresh rate that you don't need if you don't game. That said, the higher resolution ones usually also have all the other features since the price is already high. I'd recommend waiting for a black friday sale. An expensive monitor is worth it they'll last 5-10 years and you use it almost everyday. But I get that this is a really steep price.
+
+### Fine Tuning with Accessories
+
+You may notice that I haven't mentioned monitor arms, and that's no mistake. I find that, in general, monitor arms aren't what you imagine them to be. Unless you get *really* expensive ones, they're finicky as hell. They sag, move around, and you can never get them quite right. They add weight, and even the cheaper ones are a sizable cost.
+
+Almost everyone has their monitor too low and should address that. Either get (or make!) a small shelf to boost the height. Another option (that I use) is to take old thick books and stack them under your monitor. The shelf looks better, but the books work just as well.
+
+Consider a [desk pad / mat](https://amzn.to/3HC5Y5p). It will protec the desk, keep the keyboard in place, and works as a giant mouse pad. More [premium](https://www.lttstore.com/products/deskpad) options exist as well.
+
+### Travel
+
+Get a high power portable charger. It's a majorly underrated way to improve travel experience. They're tiny, charge faster, charge multiple devices at once, and can replace every single charger you need, including for your laptop.
+
+- For most cases, get the [smaller 65W Anker charger](https://amzn.to/3SgI8RD)
+- If you have a power hungry laptop, get the [larger 120W Anker charger](https://amzn.to/3uao3o4)
+    - It's worth noting this probably isn't needed even if your laptop is very high power draw. I have the [older 65W model](https://amzn.to/3SgI8RD), which means my laptop can actually outpace it. However, this just means it goes steady state instead of charging during *maximum sustained usage*. Unless you're doing something like video rendering, you're probably fine.
+    - The other consideration is this model will fast charge faster for some laptops. Consider what the wattage of the factory charger is, and how badly you need that full performance. For me, this didn't exist when I bought my 65W one and I haven't been compelled to upgrade. Yes, it fast charges slower but it's still charging fast and my laptop battery lasts 12+ hours so I'm never desperate to get an instant full charge in.
 
 ### Working With Multiple Setups
 
