@@ -20,7 +20,8 @@ Thanks for reading the blog, and thanks for taking the time to inquire more abou
 
 Looking for a side project? Open source or not, here are things I've found would add value to the world that are missing or I'm unaware of a good option for. Sometimes I've not even done basic research because I lack the time, so of these are probably low hanging fruit. Maybe this will evolve into a living page of recommended tools on the blog. Open an issue on the repo to make a recommendation.
 
-- A solution to [git blame misattribution]({% post_url 2024-02-07-git-blame-errors %}) during refactoring changes
+<!-- [git blame misattribution]({% post_url 2024-02-07-git-blame-errors %}) -->
+<!-- - A solution to git blame misattribution during refactoring changes -->
 - An alternative to Google Analytics for basic tracking. I'm not a fan I have that link in there, but it was the easiest way to get page usage numbers.
 - Automatic link aggregator by rule set (e.g. it'd be cool to generate the table of affiliates links below dynamically from the posts).
     - Ideally, you'd have a manifest to include metadata then reference it to generate links in both places. For example, the link text is different in a real sentence vs a list of products like on this page so you can't just blindly copy the link's text.
