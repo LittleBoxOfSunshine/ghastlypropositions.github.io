@@ -117,7 +117,7 @@ They have other products as well in this vein, but if you're the kind of person 
 These are single display offerings from a more mainstream brand I do have experience with:
 
 - [UGREEN for typical screen up to 4K@60](https://amzn.to/42brbg9)
-- [UGREEN for very high resolution or framerate](https://amzn.to/3HAWasr)
+- [UGREEN for very high resolution or frame rate ](https://amzn.to/3HAWasr)
 
 Dual screen is getting more specialty, so you'll see niche players. I can't personally vouch for them because they don't match my needs, but they do exist:
 
