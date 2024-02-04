@@ -47,7 +47,7 @@ If you follow these two ideas, everything else naturally follows. Any design pat
 
 ### The Design of Everyday Things
 
-Design isn't just UX in a web app, it's a general set of tenets for how to make better products. Approaching this topic from a non software point of view crystallizes this and builds a foundation in accordance with the theme of my recommendations. Moreover, many of the examples are design flaws and enhancements that are derived from postmortems and root cause analysis on failures and accidents.
+Design isn't just UX in a web app, it's a general set of tenets for how to make better products. Approaching this topic from a non software point of view crystallizes this and builds a foundation in accordance with the theme of my recommendations. Moreover, many of the examples are design flaws and enhancements that were derived from postmortems and root cause analysis on failures and accidents. These investigations are general purpose techniques that you'll employ in your career as well.
 
 *The Design of Everyday Things* isn't just a set of design principles. It shows how to think about failures, and how to build better systems. We have a natural desire to find the *person* to blame, but Norman encourages you to look deeper. When we blame *systems* and *incentives*, not people, we build better systems and create a better working environment that makes work more pleasant and encourages people to contribute and engage honestly.
 
