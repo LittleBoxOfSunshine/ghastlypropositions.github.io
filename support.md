@@ -12,7 +12,6 @@ I'm not expecting this blog to be a money making endeavor, and least not in the 
 - Contribute to the open source projects I'm involved with or those that I promote here.
     - This includes the [blog](https://github.com/LittleBoxOfSunshine/ghastlypropositions.github.io) itself. It's all on GitHub. If you see a mistake, or wish to comment that's the place. My reach is small at the moment, but I'm also open to guest posts / linking to your original post if that ever changes. While I'd like to think I have some worthwhile ideas posted, I'm here to learn, not just to lecture.
 - Use my affiliate links. I try not to go crazy with them. If they're included it's because they're genuinely related to the content. Not all posts have them for this reason. But, if you're looking for products I have a complete list of all affiliate links on this page.
-- Jekyll template for GitHub pages to "leave a comment" that redirects to opening a new issue.
 
 Thanks for reading the blog, and thanks for taking the time to inquire more about the behind the scenes!
 
@@ -22,6 +21,7 @@ Looking for a side project? Open source or not, here are things I've found would
 
 <!-- [git blame misattribution]( post_url 2024-02-07-git-blame-errors ) -->
 <!-- - A solution to git blame misattribution during refactoring changes -->
+- Jekyll template for GitHub pages to "leave a comment" that redirects to opening a new issue.
 - An alternative to Google Analytics for basic tracking. I'm not a fan I have that link in there, but it was the easiest way to get page usage numbers.
 - Automatic link aggregator by rule set (e.g. it'd be cool to generate the table of affiliates links below dynamically from the posts).
     - Ideally, you'd have a manifest to include metadata then reference it to generate links in both places. For example, the link text is different in a real sentence vs a list of products like on this page so you can't just blindly copy the link's text.
