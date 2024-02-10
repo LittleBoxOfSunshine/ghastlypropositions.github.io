@@ -42,7 +42,7 @@ The issue in programming is that since your toolkit is so small you tend to occu
 
 ### Undoing The Damage
 
-Getting on the right path is straightforward but uncomfortable. You need to work on general problem solving skills and this just comes down to practice. It's going to be hard at first. Any skill that requires novelty will partially transfer to others though, since that pattern of thinking is common to each problem just with different considerations and base inputs. You will need to practice your specific skill at some point, but you'll notice the more of these sorts of skills you acquire the easier acuiring the next one becomes.
+Getting on the right path is straightforward but uncomfortable. You need to work on general problem solving skills and this just comes down to practice. It's going to be hard at first. Any skill that requires novelty will partially transfer to others though, since that pattern of thinking is common to each problem just with different considerations and base inputs. You will need to practice your specific skill at some point, but you'll notice the more of these sorts of skills you acquire the easier acquiring the next one becomes.
 
 The other skill to keep in mind is self learning. Remember, most of the work done in the done in skilled professions is in that "semi-novel" space, no one has done exactly what you need to do, but you're also not trying to make any breakthrough discoveries or produce work that's reusable by others. Focus on learning how to ask questions, do research, and to repurpose learnings or ideas from others.
 
