@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Edge Shows Where Open Source Works and Where It Doesn't"
-date:   2024-02-28 12:00:45 -0800
+date:   2024-02-14 12:00:45 -0800
 categories: business
 author: "Chris Henk"
 ---
