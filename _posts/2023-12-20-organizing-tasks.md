@@ -3,8 +3,6 @@ layout: post
 title:  "Tame the Chaos"
 date:   2023-12-20 12:00:45 -0800
 categories: organization
-
-
 ---
 
 > The single most important thing you can do to increase your output is to manage the external world's input
