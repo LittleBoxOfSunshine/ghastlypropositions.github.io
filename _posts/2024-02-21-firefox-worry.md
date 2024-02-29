@@ -20,36 +20,36 @@ I played around with it, and unlike in the 2016-2018 days the performance wasn't
 
 ### What about Safari?
 
-Couple issues. I don't only use a Mac. I've never found Safari pleasant to use. Most importantly, it's engaged in the same anti-competitive behavior Microsoft was in the late 90's. It's borderline criminal that the government has yet to crack down on App Store policies and I'm not interested in voluntarily using the browser on my computer when I'm forced to use it (as a subcomponent) of my browser of choice on my phone.
+Couple issues. I don't only use a Mac. I've never found Safari pleasant to use. Most importantly, it's engaged in the same anti-competitive behavior Microsoft was in the 90's. It's borderline criminal that the government has yet to crack down on App Store policies and I'm not interested in voluntarily using the browser on my computer when I'm forced to use it (as a subcomponent) of my browser of choice on my phone.
 
 Don't use Safari. It's the Internet Explorer of our era.
 
 ### What about other Chromium based options?
 
-The biggest downside is that it doesn't address the issue of Chromium being too dominant or the desire to use something written in Rust[^1]. Google has at a few times forced or tried to force in bad changes that harm the open web and consumers more generally. As is always the case, the monopoly position they hold takes root and a corruption spreads. Beyond that, it's a lack of research issue. I will be looking into them next, but my goal would be to find one that's offered by an equivalent to a Mozilla. By a foundation or by a company whose model fully incentivizes maximum privacy.
+The biggest downside is that it doesn't address the issue of Chromium being too dominant or the desire to use something written in Rust[^1]. Google has at a few times forced or tried to force bad changes that harm the open web and consumers more generally. As is always the case, the monopoly position they hold takes root and a corruption spreads. Beyond that, it's a lack of research issue. I will be looking into other chromium based browsers next, but my goal would be to find one that's offered by an equivalent to a Mozilla. By a foundation or by a company whose model fully incentivizes maximum privacy.
 
 ## Now I'm Worried
 
 According to [Statcounter](https://gs.statcounter.com/browser-market-share), Firefox is down to 3.3% market share. That's truly alarming, because that would mean that nowadays you're about as likely to see Firefox as you are a Linux desktop. That also wouldn't surprise me though. I never see it used outside of developer circles, and I think that bias has made it easy for us all to miss just how catastrophic the market share decline has been over the years. In fact, the only challenger to Chromium in any way is Safari. As mentioned above though, I consider that purely artificial. The moment the government does their job that will collapse.
 
-This is alarming because we are increasingly at the whim of a single company. While Google was well situated to champion the open web, their nearly purely web based business made it a win-win, they are not well situated to push for privacy. In fact, it's an existential threat to their business which is still *shockingly* dependent on AdSense revenues. They're also willing to play nice with media giants for a variety of reasons, which results in their willingness to play ball with DRM regimes that harm consumers and security.
+This is alarming because we are increasingly at the whim of a single company. While Google was well situated to champion the open web, their nearly purely web based business made it a win-win, they are not well situated to push for privacy. In fact, it's an existential threat to their business which is still *shockingly dependent*[^2] on AdSense revenue. They're also willing to play nice with media giants for a variety of reasons, which results in their willingness to play ball with DRM regimes that harm consumers and security.
 
 ## How Do We Fix It?
 
-If I could wish upon a star, it would be for Google to recognize that Chromium has grown beyond their desire to collect data and challenge Microsoft's monopoly. It's become a critical piece of web infrastructure in the same way that Linux, git, or Nginx have. It's simply not viable to be so dependent on an easily corruptible body. Eventually, it will probably result in a fork. So why not do what Mozilla did and transfer the project to a foundation?
+If I could wish upon a star, it would be for Google to recognize that Chromium has grown beyond their desire to collect data and challenge Microsoft's monopoly. It's become a critical piece of web infrastructure in the same way that Linux, git, or Nginx have. It's simply not viable to be so dependent on an easily corruptible body. Eventually, it will probably result in a fork. So why not do what Mozilla did with Rust when it became more important and transfer the project to a foundation?
 
-Alternatively, the wisest Google that still acts purely within self interest would carefully manage this issue and intervene less frequently than they currently are. They would aim to slowly resolve the issues as they slowly adapt their business model. It's not like they don't need to already anyway, the AI boom threatens search revenue as well. So does the increasing popularity of integrated ad-blockers in reskinned Chromium builds.
+Alternatively, the wisest Google that also still acts purely within self interest would carefully manage this issue and intervene less frequently than they currently are. They would aim to delay any rebellion as long as possible as they slowly adapt their business model. It's not like they don't need to already anyway, the AI boom threatens search revenue as well. So does the increasing popularity of integrated ad-blockers in reskinned Chromium builds.
 
-I suspect they'll do neither and instead opt to kick and scream though, as most monopolies inevitably do. They'll make it more painful until finally the other Chromium browsers do fork the browser and set it up in a fully open way. In the same way that that Chrome undermined Microsoft's monopoly by being more open, I suspect that Chrome itself will be undermined by competitors that make Chromium more open.
+I suspect they'll do neither and instead opt to kick and scream though, as most monopolies eventually do. They'll make it more and more painful until finally the other Chromium browsers do fork the browser and set it up in a fully open way. In the same way that that Chrome undermined Microsoft's monopoly by being more open, I suspect that Chrome itself will be undermined one day by competitors that make Chromium more open.
 
 ### Why Doesn't A Reasonable Chromium Product Exist?
 
 I discuss the principles more thoroughly in [this post]({% post_url 2024-02-14-edge-open-source-works %}), but the key challenges here are that:
 
-1. A browser that isn't doing extra stuff and/or invasive can't easily be monetized
-2. Packaging Chromium into something useful requires maintenance and servers
+1. A browser can't easily be monetized unless it's invading your privacy.
+2. Packaging Chromium into something useful requires maintenance and servers.
 
-Signal manages to exist despite these challenges because it has sufficient donors. That could work here. In principle, this is a cheaper offering than signal is. However, it requires big donors to get the ball rolling at a minimum.
+Signal manages to exist despite these challenges because it has sufficient donors. That could work here. In principle, this is a cheaper offering than Signal is. However, it requires big donors to get the ball rolling at a minimum.
 
 Chromium is published, but it has deficiencies. It has no ability to sync settings and it's missing codecs unless you compile it yourself. These are big enough hurdles to make it unusable for most people. So what we need is to publish a complete version (easy enough with volunteers) and we need to add in sync features with funding for the back end.
 
@@ -59,7 +59,7 @@ One interesting idea I had was for the sync feature to piggy back off the user's
 2. No vendor lock in
 3. High privacy, vendor can't see your data 
 
-So there's my call to action to my fellow developers. Make a minimally edited Chromium release that's full featured. Either:
+So there's my call to action for my fellow developers. Make a minimally edited Chromium release that's full featured. Either:
 
 1. Get enough donations to offer free sync like Firefox does
 2. Offer integrated sync for a small fee (same concept as Obsidian Sync)
@@ -69,4 +69,6 @@ Better yet, offer a mix of these! Making it easy to self host the data is a valu
 
 This is something I feel strongly enough about I would eventually like to pursue it. However, for at least the next 6 months my plate is too full so I'm putting the idea out there. I'm also happy to contribute towards anyone that gets it going. It solves the privacy issues and with relatively low cost. It doesn't address the market share issue, however if such a product were to become prominent it would provide a natural spring board for the other vendors to work with on forking Chromium should the need arise. 
 
-[^1]: Yeah, yeah I hear you. I know "X, but in Rust!" Is a meme and I agree it's silly. However, the browser / OS is the workload that inspired the language in the first place. If ever there was a time to want the software you're using to have been written in Rust then clearly it's here. Chromium is aware of the issues they face, they just also have issues integrating with Rust in their current state. I don't think it's unreasonable to suggest that Firefox has a better long term road map for defending against these issues. Just [look at](https://www.chromium.org/Home/chromium-security/memory-safety/#:~:text=The Chromium project finds that,prevent such bugs at source.) the degree of effort and number of hoops devs jump through to keep Chromium safe.
+[^1]: Yeah, yeah I hear you. I know "X, but in Rust!" is a meme and I agree it's silly. However, browsers were the workload that inspired the language in the first place. If ever there is a time to want the software you're using to have been written in Rust then clearly it's here. Chromium is aware of the issues they face, they just also have issues integrating with Rust in their current state. I don't think it's unreasonable to suggest that Firefox has a better long term road map for defending against these issues. Just [look at](https://www.chromium.org/Home/chromium-security/memory-safety/#:~:text=The Chromium project finds that,prevent such bugs at source.) the degree of effort and number of hoops devs jump through to keep Chromium safe.
+
+[^2]: While it has [improved](https://www.statista.com/statistics/1093781/distribution-of-googles-revenues-by-segment/#:~:text=Advertising%20remained%20the%20main%20revenue,from%204.3%20percent%20in%202018.) from the horrifying 86.5% in 2017, advertising still made up a very risky 77.8% of Google's revenue in 2023. For comparison, at first glance Microsoft and Amazon were at around 6% and 8% respectively for the same year. This means Google is closer to being a social media company than a generalized tech giant.

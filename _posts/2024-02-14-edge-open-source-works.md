@@ -8,7 +8,7 @@ author: "Chris Henk"
 
 `Demand for your product increases when the price of your complements decreases`
 
-Microsoft Edge is dead, long live Microsoft Edge. Why did Internet Explorer perish? In its heyday it was a near and total monopoly. Most consumers didn't even really understand the concept of a "browser" if they hadn't used other operating systems and Internet Explorer was viewed as the "internet" program. When Google eventually came along with Chrome, they had to do heavy marketing not just to increase awareness of their offering but of the class of product entirely.
+Why did Internet Explorer perish? In its heyday it was a near and total monopoly. Most consumers didn't even really understand the concept of a "browser" if they hadn't used other operating systems and Internet Explorer was viewed as the "internet" program. When Google eventually came along with Chrome, they had to do heavy marketing not just to increase awareness of their offering but of the class of product entirely.
 
 In short, because you can't fight economics.
 
@@ -56,7 +56,7 @@ I think Bill Gates' 1998 memo to the Office division best captures the idea:
 
 > One thing we have got to change in our strategy – allowing Office documents to be rendered very well by other people's browsers is one of the most destructive things we could do to the company. We have to stop putting any effort into this and make sure that Office documents very well depends on PROPRIETARY IE capabilities. Anything else is suicide for our platform. This is a case where Office has to avoid doing something to destory [*[sic](https://en.wikipedia.org/wiki/Sic)*] Windows.
 
-This is true and it isn't. Gates was pretty ruthless and effective. This also tracks with most people's mental ideal of what an evil monopoly capitalist would do. Yet, they lost their monopoly so apparently it didn't work! What gives?
+This is true and it isn't. Gates was pretty ruthless and effective. This also tracks with most people's mental ideal of what an evil monopolist would do. Yet, they lost their monopoly so apparently it didn't work! What gives?
 
 The strength and weakness of this approach is that it's an all in strategy. You make finding substitute products as hard has possible and maintain a degree of quality such that the increased benefits from the substitute product are outweighed by the cost of switching. The more products you have integrated in this way, the stronger the strategy. While I'm no Gates, I suspect this is why he pushed it so hard. He was capitalizing on their wider dominant product portfolio.
 
@@ -154,33 +154,33 @@ While this may not be complete, it's pretty accurate. Seriously, try to find an 
 
 ## What Open Source Can't Do
 
-It can't resist capitalism or market forces. I'm getting a bit tired of hearing these childish takes. We are not in a "post scarcity" world because now I can send a book as 1's and 0's instead of mailing you a tree. Internet isn't free. Servers aren't free. Software devs can't write code if they can't pay rent or feed themselves. Opportunity cost exists. The list goes on, but the worst part (and why in my mind it's an exceptionally stupid take) is because it fails to consider why the book is worth money in the first place.
+It can't resist market forces. A lot of the takes on this topic that are floating around these days haven't really been thought through. We are not in a "post scarcity" world because now because I can send a book as 1's and 0's instead of mailing you a tree. Internet isn't free. Servers aren't free. Software devs can't write code if they can't pay rent or feed themselves. Opportunity cost exists. The list goes on, but the biggest error with this line of reasoning is that it fails to consider why the book is worth money in the first place.
 
 The book isn't valuable because someone cut down a tree. It's valuable because of the time and unique contributions of the author. There's a reason developed economies transition more and more to services. Manufacturing is important. In a survival sense it's more important. But we're not in survival mode. Manufacturing is a commodity, same as farming. There just isn't nearly as much value in producing the product as there is designing it.
 
-If you aren't meeting the list of conditions above, you're not going to disrupt a for profit proprietary application.
+If you aren't meeting the list of conditions from earlier, you're not going to disrupt a for profit proprietary application.
 
 ### Individual Benefits
 
-The reason I find this particular brand of naiveté so harmful is because those who promote it are unwittingly propping up their corporate overlords they claim to be resisting. In the right places, open source is just good business. The fact that thousands of people around the world are willing to offer their labor for free is just the cherry on top that further helps the bottom line.
+The reason I find this particular brand of naiveté so unfortunate is because those who promote it are unwittingly propping up the very corporate overlords they purport to be undermining. In the right places, open source is just good business. The fact that thousands of people around the world are willing to offer their labor for free is just the cherry on top that further improves the bottom line.
 
-One of my jobs at Microsoft is to increase Rust adoption because that community did great work that would benefit our systems programming. It's cheaper and better for us to contribute back upstream where there are gaps in our needs than it is to compete or fork an internal version. For a small investment (donation effectively) I can capture the value all those other people have created free of charge! Additionally, we use other people's software and hire developers. A world with safer, efficient languages that lots of people are familiar with benefits us as well.
+One of my jobs at Microsoft is to increase Rust adoption because that community did great work that would benefit our systems programming. It's cheaper and better for us to contribute back upstream where there are gaps in our needs than it is to compete or fork an internal version. For a small investment (donation really, which is even better for PR reasons) I can capture the value all those other people have created. Additionally, we use other people's software and hire developers. A world with safer, efficient languages that lots of people are familiar with benefits us as well.
 
-To be clear, I'm not saying don't contribute. I contribute to open source both on my personal time and company time. But don't delude yourself into thinking you've somehow escaped the system.
+To be clear, I'm not saying don't contribute or that it's a scam. I contribute to open source both on my personal time and company time. But don't delude yourself into thinking you've somehow escaped the system.
 
-When individuals can work in the open, their work can be seen. Their work can be taken with them to new companies, it can be expanded upon by clever ideas from other users. You can build reputation to further advance your career. Most of all, you're making your work easier. There's fewer things you have to do, tools are higher quality, you're less beholden to your management's views, and when you switch jobs you don't have to relearn everything.
+There are many benefits for the contributors too. When individuals can work in the open, their work can be seen. Their work can be taken with them to new companies, it can be expanded upon by clever ideas from other users. You can build reputation to further advance your career. Most of all, you're making your work easier. There are fewer things you have to do, tools are higher quality, you're less beholden to your management's views, and when you switch jobs your skills are more transferable.
 
 ## Viewing Open Source Broadly
 
-Markets can't do everything. Neither can shareholder held corporations. The most optimized world acknowledges this reality, and assigns tasks to the regime that best handles them. I believe that certain elements of software are domain specific infrastructure. For the same reasons private infrastructure doesn't work well with roads and utilities, they also don't work in software. The difference is simply the scale.
+Markets can't do everything. Neither can shareholder held corporations. The most optimized world acknowledges this reality, and assigns tasks to the regime that best handles them. I believe that certain elements of software are domain specific infrastructure. For the same reasons private infrastructure doesn't work well with roads and utilities, it also doesn't work well in software. The difference is simply the scale.
 
-There are more options than just private and public or private and socialized. Electrical wiring can't vary house to house. We can't have competing standards or implementations of the same standards in the same place. So the government ought step in and select one. Software infrastructure isn't quite so restricted. Yes, it's better for us to standardize where we can but it's also not impossible to have multiple competing options. And thus, we shouldn't mandate anything we should let that competition play out.
+There are more options than just private and public or private and socialized. Electrical wiring can't vary house to house which means we can't have competing standards in the same place. So the government ought to step in and select one. Software infrastructure isn't quite so restricted. Yes, it's better for us to standardize where we can, but it's also not impossible to have multiple competing options. And thus, we shouldn't mandate anything. We should let that competition play out.
 
-However, sometimes there's no clear financial incentive and/or keeping the intellectual property closed undermines the very value we're trying to capture. This is where open source has a roll to play, a unique and important economic niche. I don't think it's a coincidence that most impactful large scale open source is managed by foundations, which themselves are a legal construct that fills a middle ground niche where for profit companies can't handle the situation well but it also isn't necessary or desirable to have the government handle it either.
+However, sometimes there's no clear financial incentive and/or keeping the intellectual property closed undermines the very value we're trying to capture. This is where open source has a role to play, a unique and important economic niche. I don't think it's a coincidence that most impactful open source projects are managed by foundations, which themselves are a legal construct that fills the middle ground niche where for profit companies can't handle the situation well but it isn't necessary or desirable to have the government handle it either.
 
 There is no escape from markets. So long as there is scarcity and the absence of coercion, incentives and choice will form a market. This is true from deciding which candy bar to purchase to which employee to promote. From which policy a representative should vote on to where a new road should be routed.
 
-You're much better off embracing and studying the realities of the world than imagining a utopia where the incentives are different. Instead, learn the incentives and learn the different systems that are available to us. You can even try to create new ones, but you can't create new facts of the world. The way to seek the change you want is to structure the system such that the underlying desires of people will be incentivized to do the right thing.
+We're much better off embracing these realities of the world than imagining a utopia where things are different. Instead, learn the incentives and learn the different systems that are available to us. You can even try to create new ones, but you can't create new facts of the world. The way to seek the change you want is to structure the system such that the underlying desires of people will lead them to be incentivized to do the right thing.
 
 So in closing, open source is important. It makes the world better. More companies need to engage in it. But it's not magic. We haven't overcome scarcity, and it can't do everything.
 
