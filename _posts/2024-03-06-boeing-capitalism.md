@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Boeing's Downturn and Capitalism"
-date:   2024-02-28 12:00:45 -0800
+date:   2024-03-06 12:00:45 -0800
 categories: business
 author: "Chris Henk"
 ---
